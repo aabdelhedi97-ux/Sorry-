@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡ Aizen’s Forgiveness ⚡</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Orbitron:wght@600&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background: radial-gradient(circle at center, #0b001f, #000);
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .smoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.ibb.co/d5L6T3x/smoke.gif') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+    filter: blur(4px);
+  }
+
+  .message {
+    text-align: center;
+    z-index: 10;
+    animation: fadeIn 3s ease forwards;
+  }
+
+  .message h1 {
+    font-size: 2.5rem;
+    color: #b19cd9;
+    text-shadow: 0 0 20px #9a00ff, 0 0 40px #5200ff;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: glow 2.5s ease-in-out infinite alternate, appear 3s forwards;
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #6600ff; }
+    to { text-shadow: 0 0 25px #b300ff, 0 0 40px #7700ff; }
+  }
+
+  @keyframes appear {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+  <div class="smoke"></div>
+  <div class="message">
+    <h1>Sorry, my brother.<br> please don’t take my phone because<br> I am studying and learning programming.</h1>
+  </div>
+</body>
+</html>
